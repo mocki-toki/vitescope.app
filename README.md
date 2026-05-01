@@ -4,7 +4,7 @@ Static website for Vitescope legal/support pages and root redirect.
 
 ## Pages
 
-- `/` -> redirects to `https://example.com`
+- `/` -> redirects to `https://apps.apple.com/us/app/vitescope/id6764871497`
 - `/privacy-policy/` -> Privacy Policy
 - `/support/` -> Support
 
