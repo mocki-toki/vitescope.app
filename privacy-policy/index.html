@@ -11,11 +11,12 @@
     <main>
       <div class="card">
         <h1>Vitescope Privacy Policy</h1>
-        <p><small>Last updated: April 30, 2026</small></p>
+        <p><small>Last updated: May 16, 2026</small></p>
 
         <p>
           This Privacy Policy explains how Vitescope Team handles information in the Vitescope iOS app.
-          Vitescope helps users track day quality and health-related routines.
+          Vitescope helps users track day quality, health-related routines, nutrition, activity, sleep,
+          water, weight, and related goals.
         </p>
 
         <h2>1. Data Controller</h2>
@@ -30,6 +31,10 @@
           <li>Camera: to capture meal photos and scan barcodes.</li>
           <li>Photo Library: to attach food photos to logs.</li>
         </ul>
+        <p>
+          Vitescope uses Apple Health data only to provide health and fitness features inside the app.
+          Vitescope does not use Apple Health data for advertising, marketing, data-broker sharing, or sale.
+        </p>
 
         <h2>4. Third-Party Services</h2>
         <ul>
@@ -37,6 +42,13 @@
           <li>Firebase Crashlytics: crash reporting and diagnostic stability data.</li>
           <li>Firebase Remote Config: runtime configuration delivery.</li>
           <li>OpenFoodFacts API: food search and barcode nutrition lookup.</li>
+          <li>NCBI/PubMed API: biomedical literature search for evidence-backed health answers.</li>
+          <li>
+            OpenAI API: optional AI features, if you enable AI Agent and select OpenAI as your provider.
+          </li>
+          <li>
+            Anthropic API: optional AI features, if you enable AI Agent and select Anthropic as your provider.
+          </li>
         </ul>
 
         <h2>5. Data Categories Processed</h2>
@@ -45,29 +57,77 @@
           <li>Device-level identifiers used by analytics/crash systems.</li>
           <li>Crash and other diagnostic data for app reliability.</li>
           <li>Search terms and barcode queries sent to OpenFoodFacts for app functionality.</li>
+          <li>PubMed search queries and returned paper metadata used for evidence-backed health answers.</li>
           <li>Health and fitness records handled in app flows connected to Apple Health.</li>
+          <li>Meal photos, food names, ingredient hints, and nutrition estimates used for food logging.</li>
+          <li>Chat messages and attachments you send to Chat with Agent.</li>
+          <li>AI plan context such as health metrics, goals, nutrition totals, activity, sleep, water, and weight.</li>
+          <li>API tokens you enter for OpenAI or Anthropic, stored locally on your device.</li>
         </ul>
 
-        <h2>6. Tracking and Advertising</h2>
+        <h2>6. Optional AI Features</h2>
+        <p>
+          AI Agent is optional and disabled unless you configure it. Before using AI features, Vitescope shows an
+          AI data sharing notice and asks for your agreement. If you do not agree, AI Agent remains disabled.
+        </p>
+        <p>
+          When AI Agent is enabled, Vitescope sends only the information needed for the AI action you request to
+          the provider you select, OpenAI or Anthropic. This may include chat messages, selected attachments,
+          meal photos, food details, ingredient hints, health metrics, goals, generated plan context, local tool
+          results, saved or logged record summaries, barcode lookup results, and PubMed search results.
+        </p>
+        <p>
+          When Chat with Agent uses lookup tools, barcode or product queries may be sent to OpenFoodFacts, and
+          biomedical literature search queries may be sent to NCBI/PubMed. The returned lookup results may be
+          included in AI requests to your selected AI provider so the agent can answer your request.
+        </p>
+        <p>
+          Vitescope uses this information to generate AI Plans, answer Chat with Agent, and recognize food from
+          photos. OpenAI or Anthropic processes the submitted information under its own terms and privacy policy.
+          Review their policies here:
+          <a href="https://openai.com/policies/privacy-policy/">OpenAI Privacy Policy</a> and
+          <a href="https://www.anthropic.com/legal/privacy">Anthropic Privacy Policy</a>.
+        </p>
+        <p>
+          You can withdraw AI consent at any time by turning off AI Agent in Settings. Turning off AI Agent stops
+          Vitescope from sending AI requests to OpenAI or Anthropic. You can also remove or replace your API token
+          from Agent settings.
+        </p>
+
+        <h2>7. Tracking and Advertising</h2>
         <p>
           Vitescope does not use collected data for cross-app advertising tracking, ad retargeting, or data-broker sharing.
           Vitescope does not include third-party advertising.
         </p>
 
-        <h2>7. Data Retention</h2>
+        <h2>8. Data Retention</h2>
         <p>
           Local app records are stored on-device unless transmitted to enabled third-party services for analytics,
-          diagnostics, runtime configuration, or food lookup requests.
+          diagnostics, runtime configuration, food lookup requests, or optional AI requests.
+        </p>
+        <p>
+          OpenAI and Anthropic API tokens are stored on your device. Vitescope does not operate a Vitescope account
+          server for these tokens. Chat history, saved food logs, photos, health records, and AI plan results are
+          stored locally in the app unless a feature explicitly sends selected data to a third-party service as
+          described in this policy.
+        </p>
+        <p>
+          Third-party providers may keep submitted data according to their own retention policies. If you want to
+          delete data stored by OpenAI, Anthropic, Firebase, or another third-party provider, you may need to use
+          that provider's account controls or contact that provider directly.
         </p>
 
-        <h2>8. User Controls</h2>
+        <h2>9. User Controls</h2>
         <ul>
           <li>You can uninstall the app at any time.</li>
           <li>You can clear/reset local sync and personalization data from app settings.</li>
+          <li>You can turn off AI Agent in Agent settings to stop AI requests.</li>
+          <li>You can remove or replace your OpenAI or Anthropic API token in Agent settings.</li>
+          <li>You can clear local app records from app settings where the app provides reset controls.</li>
           <li>You can contact support for privacy-related requests.</li>
         </ul>
 
-        <h2>9. Contact</h2>
+        <h2>10. Contact</h2>
         <p>
           For privacy questions, contact:
           <a href="mailto:support@vitescope.app">support@vitescope.app</a>
