@@ -11,7 +11,7 @@
     <main>
       <div class="card">
         <h1>Vitescope Privacy Policy</h1>
-        <p><small>Last updated: May 16, 2026</small></p>
+        <p><small>Last updated: May 26, 2026</small></p>
 
         <p>
           This Privacy Policy explains how Vitescope Team handles information in the Vitescope iOS app.
@@ -44,6 +44,9 @@
           <li>OpenFoodFacts API: food search and barcode nutrition lookup.</li>
           <li>NCBI/PubMed API: biomedical literature search for evidence-backed health answers.</li>
           <li>
+            User-selected MCP clients: optional local-network access, if you enable MCP access in app settings.
+          </li>
+          <li>
             OpenAI API: optional AI features, if you enable AI Agent and select OpenAI as your provider.
           </li>
           <li>
@@ -63,6 +66,7 @@
           <li>Chat messages and attachments you send to Chat with Agent.</li>
           <li>AI plan context such as health metrics, goals, nutrition totals, activity, sleep, water, and weight.</li>
           <li>API tokens you enter for OpenAI or Anthropic, stored locally on your device.</li>
+          <li>MCP bearer tokens and MCP tool requests, if you enable MCP access.</li>
         </ul>
 
         <h2>6. Optional AI Features</h2>
@@ -94,22 +98,43 @@
           from Agent settings.
         </p>
 
-        <h2>7. Tracking and Advertising</h2>
+        <h2>7. Optional MCP Access</h2>
+        <p>
+          MCP access is optional and disabled unless you enable it in settings. When enabled, Vitescope starts a
+          local-network MCP server so MCP-compatible clients that you control can connect to the app.
+        </p>
+        <p>
+          MCP access requires a bearer token by default. Vitescope shows setup instructions in the app, lets you
+          regenerate the MCP token, and uses per-tool permissions or confirmations for sensitive actions.
+        </p>
+        <p>
+          MCP clients may request app functionality that reads or changes local Vitescope data, depending on the
+          tools you allow. Tool requests may include or return health and fitness context, goals, nutrition data,
+          food details, chat-related context, lookup results, and other app records needed to complete the tool
+          call. Data is shared with the MCP client you connect to Vitescope.
+        </p>
+        <p>
+          You can disable MCP access, regenerate the MCP token, or change tool permissions at any time in MCP
+          settings.
+        </p>
+
+        <h2>8. Tracking and Advertising</h2>
         <p>
           Vitescope does not use collected data for cross-app advertising tracking, ad retargeting, or data-broker sharing.
           Vitescope does not include third-party advertising.
         </p>
 
-        <h2>8. Data Retention</h2>
+        <h2>9. Data Retention</h2>
         <p>
           Local app records are stored on-device unless transmitted to enabled third-party services for analytics,
-          diagnostics, runtime configuration, food lookup requests, or optional AI requests.
+          diagnostics, runtime configuration, food lookup requests, optional AI requests, or optional MCP tool
+          requests to a client you connect.
         </p>
         <p>
-          OpenAI and Anthropic API tokens are stored on your device. Vitescope does not operate a Vitescope account
-          server for these tokens. Chat history, saved food logs, photos, health records, and AI plan results are
-          stored locally in the app unless a feature explicitly sends selected data to a third-party service as
-          described in this policy.
+          OpenAI and Anthropic API tokens and MCP bearer tokens are stored on your device. Vitescope does not
+          operate a Vitescope account server for these tokens. Chat history, saved food logs, photos, health
+          records, and AI plan results are stored locally in the app unless a feature explicitly sends selected
+          data to a third-party service or connected MCP client as described in this policy.
         </p>
         <p>
           Third-party providers may keep submitted data according to their own retention policies. If you want to
@@ -117,17 +142,18 @@
           that provider's account controls or contact that provider directly.
         </p>
 
-        <h2>9. User Controls</h2>
+        <h2>10. User Controls</h2>
         <ul>
           <li>You can uninstall the app at any time.</li>
           <li>You can clear/reset local sync and personalization data from app settings.</li>
           <li>You can turn off AI Agent in Agent settings to stop AI requests.</li>
           <li>You can remove or replace your OpenAI or Anthropic API token in Agent settings.</li>
+          <li>You can turn off MCP access, regenerate the MCP token, or change MCP tool permissions in MCP settings.</li>
           <li>You can clear local app records from app settings where the app provides reset controls.</li>
           <li>You can contact support for privacy-related requests.</li>
         </ul>
 
-        <h2>10. Contact</h2>
+        <h2>11. Contact</h2>
         <p>
           For privacy questions, contact:
           <a href="mailto:support@vitescope.app">support@vitescope.app</a>
